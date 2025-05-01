@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 35px;
 
     @media screen and (min-width: $bp-tablet) {
       width: 40%;
@@ -31,27 +31,14 @@
     line-height: 100%;
     position: relative;
     text-wrap: nowrap;
-
-    &--accent {
-      color: var(--secondary);
-
-      &:after {
-        content: '';
-        background-image: url("../../public/images/decor-easy.png");
-        height: 20px;
-        width: 135px;
-        position: absolute;
-        bottom: -14px;
-        right: 32px;
-        display: inline-block;
-      }
-    }
+    color: var(--secondary);
   }
 
   &__text {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 18px;
     line-height: 150%;
+    color: var(--secondary);
   }
 
   &__button {
@@ -72,7 +59,7 @@
       top: 0;
       right: 0;
       height: 100%;
-      width: 50%;
+      width: 60%;
       z-index: 0;
     }
   }

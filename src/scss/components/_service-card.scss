@@ -1,24 +1,25 @@
 .service-card {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 18px;
   width: 20%;
   text-align: center;
 
   &__icon-container {
-    margin: 0 auto;
-    padding: 32px;
-    border-radius: 16px;
-    background: var(--secondary-light);
+    margin: 20px auto;
   }
 
   &__icon {
-    fill: var(--secondary);
+    fill: var(--primary);
   }
 
   &__text {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 150%;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 22px;
+    }
   }
 }

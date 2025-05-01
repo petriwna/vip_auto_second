@@ -45,7 +45,7 @@ export class Main {
                     slidesPerView: 2,
                 },
                 1280: {
-                    slidesPerView: 4,
+                    slidesPerView: 3,
                 },
             },
             pagination: {

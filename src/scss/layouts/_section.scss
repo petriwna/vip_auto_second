@@ -6,14 +6,10 @@
   }
 
   &__title {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 150%;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 116%;
     color: var(--secondary);
-    border-radius: 8px;
-    padding: 16px 32px;
-    width: fit-content;
-    background: rgba(21, 114, 211, 0.1);
 
     @media screen and (min-width: $bp-tablet){
       font-size: 34px;
@@ -27,8 +23,8 @@
   }
 
   &__subtitle {
-    font-weight: 500;
-    font-size: 38px;
     line-height: 130%;
+    font-weight: 400;
+    font-size: 18px;
   }
 }

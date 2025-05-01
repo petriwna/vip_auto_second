@@ -1,49 +1,54 @@
 .car {
-  box-shadow: 0 12px 24px 0 rgba(16, 76, 139, 0.16);
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 25px;
   border-radius: 16px;
-  padding: 26px 24px;
-  height: 445px;
+  height: 403px;
+  position: relative;
+  color: var(--primary);
+
+  &__decor {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    height: 379px;
+  }
 
   &__image {
     height: 108px;
     object-fit: contain;
   }
 
+  &__content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
   &__title {
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 900;
+    font-size: 38px;
     line-height: 106%;
+    margin-bottom: 8px;
+  }
+
+  &__mark {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-primary);
   }
 
   &__about {
     font-weight: 400;
     font-size: 12px;
     line-height: 142%;
-    color: var(--color-secondary-light);
-  }
-
-  &__list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
-  }
-
-  &__item {
-    color: var(--color-secondary-light);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 142%;
-    display: flex;
-    align-items: flex-start;
-    gap: 6px;
-    text-wrap: nowrap;
-  }
-
-  &__icon {
-    fill: var(--color-secondary-light);
+    width: 80%;
+    margin: 0 auto;
   }
 
   &__text {
@@ -52,17 +57,13 @@
     gap: 24px;
   }
 
-  &__price {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  &__button {
+    background-color: var(--secondary);
+    border: 2px solid var(--secondary);
 
-    &:before {
-      display: block;
-      content: '';
-      border: 1px solid var(--color-secondary-light);
-      width: 100%;
-      height: 1px;
+    &:hover {
+      background-color: transparent;
+      color: var(--primary);
     }
   }
 }

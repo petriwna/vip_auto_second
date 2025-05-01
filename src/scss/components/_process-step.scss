@@ -1,6 +1,5 @@
 .process-step {
-  font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 150%;
   color: var(--color-black);
   display: flex;
@@ -9,11 +8,5 @@
 
   &__text {
     margin: 0;
-
-    &--number {
-      font-size: 40px;
-      color: var(--secondary);
-      font-weight: 700;
-    }
   }
 }

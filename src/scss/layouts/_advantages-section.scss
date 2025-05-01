@@ -1,11 +1,40 @@
 .advantages-section {
+  position: relative;
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+  }
+
   &__content {
-    padding-top: 40px;
+    width: 100%;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 50%;
+    }
   }
 
   &__list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__image {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      position: absolute;
+      background-image: url("../../public/images/advantages-section.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center left;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+    }
   }
 }
